@@ -6,5 +6,5 @@ The Odin Project Building a Messaging App using;
 - React
 - Node
 - Passportjs & Bcryptjs
-- Socket.io
+- Socket.io (for real time communication)
 - REST API
