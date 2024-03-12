@@ -1,0 +1,267 @@
+nav {
+    border-bottom: 1px solid grey;
+}
+
+.homepage {
+    display: flex;
+    min-height: 100vh;
+}
+
+.side-bar {
+    flex: .25;
+    border-right: 1px solid rgb(173, 159, 159);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+}
+
+.chat-bar {
+    flex: 1.5;
+    border-right: 1px solid rgba(173, 159, 159);
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    max-height: 100vh;
+}
+
+.top-half {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-icon,.online-icon, .request-icon, .fake-icon {
+    position: relative;
+    padding: .5em;
+    border-radius: .2em;
+}
+
+.chat-display-message,.online-display-message, .request-display-message, .fake-display-message {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(100%,-50%);
+    padding: .5em;
+    background-color: rgb(7, 7, 7);
+    color: rgb(212, 140, 140);
+    border-radius: .5em;
+
+}
+
+.friends {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.all-friends {
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-title {
+    flex: 1;
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+.online-title {
+    padding: .5em;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.friend-container {
+    flex: 8;
+}
+
+.online-friend-container, .no-one{
+    display: flex;
+    padding: .5em;
+    font-size: 1.2em;
+    justify-content: space-between;
+}
+
+.future-friends, .friend-requests, .pending-requests{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.future-friends-title, .friend-request-title, .pending-request-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+}
+
+.potential-friend, .friend-request, .pending-request,.friend-container {
+    display: flex;
+    padding: 1em;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.first-half {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.second-half-icons {
+    display: flex;
+    gap: 1em;
+}
+
+.second-half {
+    display: flex;
+    gap: .5em;
+}
+
+.profile-pic {
+    height:2em;
+    border-radius: 1em;
+}
+
+.chat {
+    padding: 1em;
+    font-weight: bolder;
+}
+
+.chat-title {
+    font-size: 1.5em;
+}
+
+.friends-chat {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+}
+
+.chat-friend-container {
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    gap: 1em;
+    border-radius: 1em;
+    font-size: 1.2em;
+}
+
+.chat-header {
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    flex: 20;
+    border-bottom: 1px solid black;
+    padding: .5em;
+    gap: .5em;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.chat-footer {
+    flex: 1;
+    display: flex;
+    padding: .5em;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    gap: .5em;
+}
+
+.message {
+    flex: 20;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    padding: .5em;
+    padding-left: 1em;
+    font-size: 1.1rem;
+}
+
+.message::placeholder{
+    color: rgb(113, 156, 243);
+}
+
+.submit{
+    flex:.25;
+}
+
+.sender-container, .receive-container {
+    display: flex;
+}
+
+.sender-container{
+    justify-content: flex-end;
+}
+
+.receive-container {
+    justify-content: flex-start;
+}
+
+.send-container {
+    background-color: rgb(113, 156, 243);
+    color: rgb(250, 250, 250);
+}
+
+.receive-container {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    max-width: 60%; 
+    width: fit-content;
+}
+
+.send-container, .receive-container{
+  padding: 0.5em;
+  max-width: 60%; 
+  border-radius: 1em;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.receive-container {
+    overflow:auto;
+}
+
+.sender-message,
+.receiver-message {
+    overflow-wrap: break-word;
+    word-wrap: break-word
+}
+
+.chat-placeholder {
+    flex: 5;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(123, 140, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.logout-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
